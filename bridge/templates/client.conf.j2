@@ -1,0 +1,13 @@
+[Interface]
+PrivateKey = {{ private_key }}
+Address = {{ address }}
+MTU = 1280
+DNS = 1.1.1.1, 1.0.0.1
+{% if not table %}
+Table = off
+{% endif %}
+
+[Peer]
+PublicKey = {{ server_public_key }}
+Endpoint = {{ external_ip }}:{{ wg_port }}
+AllowedIPs = 0.0.0.0/0
