@@ -34,6 +34,36 @@ You don't _have_ to wait for the maintainer to comment on the issue before start
 similar existing issues, open or closed, but if the maintainer has commented, it means the maintainer has, based on the comment itself,
 acknowledged the issue.
 
+## Development Environment
+
+This project uses `uv` for package and virtual environment management.
+
+### Setup
+
+1. **Install `uv`**
+
+   Follow the [official instructions](https://docs.astral.sh/uv/getting-started/installation/) to install `uv` on your system.
+
+2. **Synchronize Project Dependencies**
+
+   This project defines dependency groups for base project and development.
+
+#### Development Environment (`dev` group)
+
+- By default, syncing will install the base project dependencies and the `dev` group:
+
+  ```bash
+  uv sync
+  ```
+
+- The `dev` group includes tools for formatting, linting, and pre-commit hooks (`ruff`, `pre-commit`).
+
+- After syncing, set up the pre-commit hooks:
+
+  ```bash
+  uv run pre-commit install
+  ```
+
 ## Commits
 
 All commits are expected to follow the conventional commits specification.
