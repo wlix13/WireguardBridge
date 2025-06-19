@@ -1,0 +1,35 @@
+[project]
+name = "wireguard-bridge"
+version = "0.1.0"
+description = "Docker container that bridges WireGuard clients to OpenVPN servers"
+authors = [{ name = "Renat Mustafin", email = "mustafinrr.rm@gmail.com" }]
+maintainers = [{ name = "Renat Mustafin", email = "mustafinrr.rm@gmail.com" }]
+requires-python = ">=3.12"
+dependencies = []
+
+
+[dependency-groups]
+dev = ["ruff>=0.12.0", "pre-commit>=4.2.0"]
+
+
+[tool.ruff]
+line-length = 120
+
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "YTT", "S"]
+ignore = [
+    "S104", # Possible binding to all interfaces.
+    "S110", # `try`-`except`-`pass` detected, consider logging the exception.
+    "S603", # call: check for execution of untrusted input
+]
+
+[tool.ruff.lint.isort]
+lines-after-imports = 2
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
