@@ -1,0 +1,23 @@
+[Interface]
+Address = {{ server_address }}
+ListenPort = {{ wg_port }}
+PrivateKey = {{ private_key }}
+
+# Forward WireGuard traffic through OpenVPN tunnel
+PostUp = sudo iptables -A FORWARD -i %i -o {{ tun_interface }} -j ACCEPT
+PostUp = sudo iptables -A FORWARD -o %i -i {{ tun_interface }} -j ACCEPT
+PostUp = sudo iptables -t nat -A POSTROUTING -o {{ tun_interface }} -j MASQUERADE
+PostUp = sudo iptables -t nat -A POSTROUTING -j MASQUERADE
+
+# Cleanup rules when stopping
+PostDown = sudo iptables -D FORWARD -i %i -o {{ tun_interface }} -j ACCEPT
+PostDown = sudo iptables -D FORWARD -o %i -i {{ tun_interface }} -j ACCEPT
+PostDown = sudo iptables -t nat -D POSTROUTING -o {{ tun_interface }} -j MASQUERADE
+PostDown = sudo iptables -t nat -D POSTROUTING -j MASQUERADE
+
+{% for peer in peers %}
+{{ peer }}
+{% if not loop.last %}
+
+{% endif %}
+{% endfor %}
