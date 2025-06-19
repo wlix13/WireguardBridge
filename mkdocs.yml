@@ -1,0 +1,62 @@
+site_name: WireGuard Bridge
+site_url: https://wlix13.github.io/WireguardBridge/
+repo_url: https://github.com/wlix13/WireguardBridge
+repo_name: wlix13/WireguardBridge
+edit_uri: "edit/main/docs/"
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.code.select
+  icon:
+    repo: fontawesome/brands/github-alt
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          name: English
+          default: true
+          nav:
+            - Home: index.md
+            - Architecture: architecture.md
+            - Usage: usage.md
+            - Configuration: configuration.md
+            - GitHub: https://github.com/wlix13/WireguardBridge
