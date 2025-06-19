@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://wlix13.github.io/WireguardBridge/</loc>
+        <lastmod>2025-06-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wlix13.github.io/WireguardBridge/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://wlix13.github.io/WireguardBridge/ru/"/>
+    </url>
+    <url>
+        <loc>https://wlix13.github.io/WireguardBridge/architecture/</loc>
+        <lastmod>2025-06-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wlix13.github.io/WireguardBridge/architecture/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://wlix13.github.io/WireguardBridge/ru/architecture/"/>
+    </url>
+    <url>
+        <loc>https://wlix13.github.io/WireguardBridge/configuration/</loc>
+        <lastmod>2025-06-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wlix13.github.io/WireguardBridge/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://wlix13.github.io/WireguardBridge/ru/configuration/"/>
+    </url>
+    <url>
+        <loc>https://wlix13.github.io/WireguardBridge/usage/</loc>
+        <lastmod>2025-06-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wlix13.github.io/WireguardBridge/usage/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://wlix13.github.io/WireguardBridge/ru/usage/"/>
+    </url>
+    <url>
+        <loc>https://wlix13.github.io/WireguardBridge/ru/</loc>
+        <lastmod>2025-06-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://wlix13.github.io/WireguardBridge/ru/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wlix13.github.io/WireguardBridge/"/>
+    </url>
+    <url>
+        <loc>https://wlix13.github.io/WireguardBridge/ru/architecture/</loc>
+        <lastmod>2025-06-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://wlix13.github.io/WireguardBridge/ru/architecture/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wlix13.github.io/WireguardBridge/architecture/"/>
+    </url>
+    <url>
+        <loc>https://wlix13.github.io/WireguardBridge/ru/configuration/</loc>
+        <lastmod>2025-06-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://wlix13.github.io/WireguardBridge/ru/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wlix13.github.io/WireguardBridge/configuration/"/>
+    </url>
+    <url>
+        <loc>https://wlix13.github.io/WireguardBridge/ru/usage/</loc>
+        <lastmod>2025-06-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://wlix13.github.io/WireguardBridge/ru/usage/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wlix13.github.io/WireguardBridge/usage/"/>
+    </url>
+</urlset>
