@@ -1,6 +1,6 @@
 [project]
 name = "wireguard-bridge"
-version = "0.1.0"
+version = "1.0.0"
 description = "Docker container that bridges WireGuard clients to OpenVPN servers"
 authors = [{ name = "Renat Mustafin", email = "mustafinrr.rm@gmail.com" }]
 maintainers = [{ name = "Renat Mustafin", email = "mustafinrr.rm@gmail.com" }]
