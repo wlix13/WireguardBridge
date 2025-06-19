@@ -60,3 +60,12 @@ plugins:
             - Usage: usage.md
             - Configuration: configuration.md
             - GitHub: https://github.com/wlix13/WireguardBridge
+
+        - locale: ru
+          name: Русский
+          nav:
+            - Главная: index.md
+            - Архитектура: architecture.md
+            - Использование: usage.md
+            - Конфигурация: configuration.md
+            - GitHub: https://github.com/wlix13/WireguardBridge
