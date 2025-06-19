@@ -16,6 +16,7 @@ dependencies = [
 setup-openvpn = "bridge.admin.setup_openvpn:main"
 setup-wireguard = "bridge.admin.setup_wireguard:main"
 run-wireguard = "bridge.admin.run_wireguard:main"
+bridge = "bridge.main:main"
 
 
 [dependency-groups]
