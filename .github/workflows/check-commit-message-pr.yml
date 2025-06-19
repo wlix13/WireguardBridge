@@ -1,0 +1,59 @@
+name: Check commit message in PR
+
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - reopened
+      - synchronize
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - reopened
+      - synchronize
+
+jobs:
+  check-commit-message:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Check for fixup commits
+        uses: gsactions/commit-message-checker@v2
+        with:
+          pattern: "^(?!fixup!).*$"
+          flags: "i"
+          excludeDescription: "true"
+          excludeTitle: "true"
+          checkAllCommitMessages: "true"
+          accessToken: ${{ secrets.GITHUB_TOKEN }}
+          error: |
+            Fixup commits are not allowed in pull requests.
+
+            Found commit message starting with "fixup!" which must be squashed before merging.
+
+            To squash fixup commits, use:
+              git rebase -i --autosquash origin/${{ github.event.pull_request.base.ref }}
+
+            Or manually squash the fixup commits with their target commits.
+
+            After squashing, force push the updated branch:
+              git push --force-with-lease origin ${{ github.event.pull_request.head.ref }}
+
+      - name: Check for Cyrillic characters
+        uses: gsactions/commit-message-checker@v2
+        with:
+          pattern: "^[^А-Яа-яёЁ]*$"
+          flags: "si"
+          excludeDescription: "true"
+          excludeTitle: "true"
+          checkAllCommitMessages: "true"
+          accessToken: ${{ secrets.GITHUB_TOKEN }}
+          error: |
+            The commit message must contain only Latin characters.
+            Ensure there are no Cyrillic characters in the commit title or description.

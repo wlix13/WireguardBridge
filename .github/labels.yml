@@ -1,0 +1,123 @@
+# PR Type Labels
+- name: "bugfix"
+  description: "Fixes a bug"
+  color: "6897bb"
+
+- name: "enhancement"
+  description: "Improvement to existing functionality"
+  color: "17a2b8"
+
+- name: "breaking change"
+  description: "Changes that break backward compatibility"
+  color: "d73a4a"
+
+- name: "refactoring"
+  description: "Code change that neither fixes a bug nor adds a feature"
+  color: "9932cc"
+
+- name: "docs"
+  description: "Improvements or additions to documentation"
+  color: "1f77b4"
+
+- name: "tests"
+  description: "Adding missing tests or correcting existing tests"
+  color: "2a9d8f"
+
+- name: "build/ci"
+  description: "Changes to build system or CI/CD pipeline"
+  color: "264653"
+
+# Issue Type Labels
+- name: "bug"
+  description: "Something is not working"
+  color: "ff0000"
+
+- name: "wontfix"
+  description: "This will not be worked on"
+  color: "495057"
+
+- name: "dependencies"
+  description: "Dependencies updates"
+  color: "6f42c1"
+
+# Issue and PR Labels
+- name: "feature"
+  description: "New feature or request"
+  color: "28a745"
+
+- name: "invalid"
+  description: "This doesn't seem right"
+  color: "6c757d"
+
+- name: "duplicate"
+  description: "This issue or pull request already exists"
+  color: "ff69b4"
+
+# Workflow and Status Labels
+- name: "needs review"
+  description: "Pull request needs code review"
+  color: "fbca04"
+
+- name: "in progress"
+  description: "Work is currently in progress"
+  color: "ededed"
+
+- name: "ready to merge"
+  description: "Pull request is approved and ready to merge"
+  color: "0e8a16"
+
+- name: "on hold"
+  description: "Work is temporarily paused"
+  color: "d4c5f9"
+
+# CI/Testing Labels
+- name: "tests passing"
+  description: "All automated tests are passing"
+  color: "28a745"
+
+- name: "tests failing"
+  description: "Automated tests are failing"
+  color: "dc3545"
+
+- name: "needs testing"
+  description: "Requires manual or additional testing"
+  color: "ffc107"
+
+# Priority Labels
+- name: "priority: critical"
+  description: "Requires immediate attention"
+  color: "b60205"
+
+- name: "priority: high"
+  description: "High priority issue or PR"
+  color: "d93f0b"
+
+- name: "priority: medium"
+  description: "Medium priority issue or PR"
+  color: "fbca04"
+
+- name: "priority: low"
+  description: "Low priority issue or PR"
+  color: "0e8a16"
+
+# Impact Labels
+- name: "security"
+  description: "Security-related issue or improvement"
+  color: "ee0701"
+
+- name: "performance"
+  description: "Performance improvement or issue"
+  color: "ff9500"
+
+# Size Labels
+- name: "size: small"
+  description: "Small change, quick to review"
+  color: "c2e0c6"
+
+- name: "size: medium"
+  description: "Medium-sized change"
+  color: "fef2c0"
+
+- name: "size: large"
+  description: "Large change, requires careful review"
+  color: "f9d0c4"
