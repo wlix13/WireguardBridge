@@ -46,11 +46,11 @@ This project uses `uv` for package and virtual environment management.
 
 2. **Synchronize Project Dependencies**
 
-   This project defines dependency groups for base project and development.
+   This project defines dependency groups for base project, development and documentation.
 
-#### Development Environment (`dev` group)
+#### A. Development Environment (`dev` group)
 
-- By default, syncing will install the base project dependencies and the `dev` group:
+- By default, syncing will install the main dependencies and the `dev` group:
 
   ```bash
   uv sync
@@ -62,6 +62,20 @@ This project uses `uv` for package and virtual environment management.
 
   ```bash
   uv run pre-commit install
+  ```
+
+#### B. Documentation Environment (`docs` group)
+
+- To install documentation dependencies, sync with the `docs` group:
+
+  ```bash
+  uv sync --group docs
+  ```
+
+- To serve the documentation locally:
+
+  ```bash
+  uv run mkdocs serve
   ```
 
 ## Commits
